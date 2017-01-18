@@ -42,6 +42,7 @@ typedef NS_ENUM(NSInteger, SWCellState)
 
 @property (nonatomic, weak) id <SWTableViewCellDelegate> delegate;
 
+- (void)build;
 - (void)setRightUtilityButtons:(NSArray *)rightUtilityButtons WithButtonWidth:(CGFloat) width;
 - (void)setLeftUtilityButtons:(NSArray *)leftUtilityButtons WithButtonWidth:(CGFloat) width;
 - (void)hideUtilityButtonsAnimated:(BOOL)animated;

@@ -48,33 +48,9 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
     BOOL layoutUpdating;
 }
 
-#pragma mark Initializers
+#pragma mark builds
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    
-    if (self)
-    {
-        [self initializer];
-    }
-    
-    return self;
-}
-
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    
-    if (self)
-    {
-        [self initializer];
-    }
-    
-    return self;
-}
-
-- (void)initializer
+- (void)build
 {
     layoutUpdating = NO;
     // Set up scroll view that will host our cell content
